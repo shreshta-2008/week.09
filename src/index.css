@@ -1,0 +1,54 @@
+:root {
+  /* Harry Potter Palette */
+  --gryffindor-red: #740001;
+  --gryffindor-gold: #d4af37;
+  --parchment: #f0ead6;
+  --magic-black: #0a0a0a;
+  
+  font-family: 'Georgia', serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--gryffindor-gold);
+  background-color: var(--magic-black);
+}
+
+body {
+  margin: 0;
+  display: block; /* Changed from flex to allow scrolling */
+  min-width: 320px;
+  min-height: 100vh;
+  /* Add a subtle vignette effect */
+  background: radial-gradient(circle, transparent 20%, black 150%);
+}
+
+h1, h2, h3 {
+  font-family: 'Apple Chancery', 'Palatino', serif;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  letter-spacing: 1px;
+}
+
+a {
+  font-weight: 500;
+  color: var(--gryffindor-gold);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--gryffindor-gold);
+}
+
+a:hover {
+  color: white;
+  border-bottom-style: solid;
+}
+
+/* Custom Scrollbar for a "Old Manuscript" feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gryffindor-red);
+  border-radius: 5px;
+}
